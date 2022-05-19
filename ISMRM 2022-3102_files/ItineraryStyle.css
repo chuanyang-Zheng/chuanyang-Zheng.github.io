@@ -1,0 +1,337 @@
+
+.bodyContent {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.mastTitleBar {
+	margin-bottom: 1.2em;
+}
+
+.mastTitleBarLabel {
+	color: #000;
+}
+
+.LoginMenu {
+	font-weight: bold;
+}
+
+.QuickSearch {
+	width: 75%;
+	margin: 0% auto;
+}
+
+	.QuickSearch input[type=text] {
+		font-size: 1.8vw !important;
+		padding: 25px 5px !important;
+	}
+
+@media screen and (max-width: 900px) {
+	.QuickSearch {
+		width: 95%;
+	}
+
+		.QuickSearch input[type=text] {
+			font-size: 2vw !important;
+			padding: 15px 5px !important;
+		}
+}
+
+@media screen and (min-width: 1500px) {
+	.QuickSearch {
+		width: 50%;
+	}
+
+		.QuickSearch input[type=text] {
+			font-size: 1.0vw !important;
+			padding: 25px 5px !important;
+		}
+}
+
+
+.field-label-right-align {
+	text-align: right;
+}
+
+.SubsectionLabel {
+	font-size: 18px;
+	font-weight: bold;
+	color: #07488A;
+}
+
+@media screen and (max-width: 800px) {
+	.field-label-right-align {
+		text-align: left;
+	}
+}
+
+.SearchResultsView {
+	border: 1px solid #dddddd;
+	padding: 2%;
+	margin-bottom: 20px;
+}
+
+.SearchResultsRow {
+	border: 1px solid #dddddd;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #f3f3f3;
+}
+
+.EventPresentations {
+	margin-top: 10px;
+}
+
+.PersonAffiliation,
+.Moderator {
+	font-style: italic;
+}
+
+
+.itn-button {
+	font-size: .8vw;
+}
+
+.full-width {
+	width: 200px;
+}
+
+.btn-print::after {
+	padding-left: 6px;
+	content: "\f02f";
+}
+
+.btn-remove {
+	background-color: #ffbfbf !important;
+	color: #000000 !important;
+}
+
+.btn-add {
+	background-color: #87ff91 !important;
+	color: #000000 !important;
+}
+
+.PresentationBox {
+	background-color: #ffffff;
+}
+
+	.PresentationBox .PresentationTimes {
+		font-size: .7em;
+	}
+
+	.PresentationBox .PresentationNumbers {
+		font-size: .7em;
+	}
+
+	.PresentationBox .Title {
+		color: #444444;
+		font-size: 1.4vw;
+		font-weight: bold;
+		margin-bottom: 6px;
+	}
+
+	.PresentationBox .AuthorBlock {
+		color: #777777;
+		font-size: .7em;
+		font-weight: normal;
+		margin-bottom: 6px;
+	}
+
+
+.PresentationBoxStacked {
+	width: 100%;
+	height: auto;
+	padding: 0px;
+	margin-bottom: 12px;
+	border: none;
+}
+
+	.PresentationBoxStacked .ImageBox {
+		padding-right: 0px;
+		margin-right: 0px;
+	}
+
+	.PresentationBoxStacked .ContentBox {
+	}
+
+	.PresentationBoxStacked .Title {
+	}
+
+	.PresentationBoxStacked .AuthorBlock {
+	}
+
+	.PresentationBoxStacked .PresentationTimes {
+		margin-bottom: 6px;
+	}
+
+	.PresentationBoxStacked .PresentationNumbers {
+		margin-bottom: 6px;
+	}
+
+
+.PresentationBoxFlow {
+	display: inline-table;
+	margin: 0px 15px 15px 0px;
+	border: none;
+}
+
+	.PresentationBoxFlow .ImageBox {
+		margin-bottom: 6px;
+	}
+
+
+@media screen and (min-width: 1800px) {
+	.itn-button {
+		font-size: .7vw;
+	}
+}
+
+
+@media screen and (max-width: 1450px) {
+	.itn-button {
+		font-size: 1vw;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.itn-button {
+		font-size: 1.5vw;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.itn-button {
+		font-size: 1.7vw;
+	}
+}
+
+
+@media screen and (max-width: 650px) {
+	.itn-button {
+		font-size: 2.2vw;
+	}
+}
+
+@media screen and (min-width: 995px) {
+
+	.PresentationBox .Title {
+		font-size: 1.2vw;
+	}
+
+	.PresentationBox .AuthorBlock {
+		font-size: .9vw;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.PresentationBox .Title {
+		font-size: .9vw;
+	}
+
+	.PresentationBox .AuthorBlock {
+		font-size: .7vw;
+	}
+}
+
+
+@media screen and (min-width: 1400px) {
+	.PresentationBox .Title {
+		font-size: .9vw;
+	}
+
+	.PresentationBox .AuthorBlock {
+		font-size: .7vw;
+	}
+}
+
+
+.btnViewPresentations {
+	background-color: #6699cc;
+	color: #ffffff;
+}
+
+
+#loginContainer {
+	width: 80%;
+	margin: 40px auto;
+}
+
+@media screen and (max-width: 1050px) {
+	#loginContainer {
+		width: 100%;
+		margin: 30px 0px;
+	}
+}
+
+#loginForm {
+	width: 100%;
+	margin: 0%;
+	border: none;
+	background: #f5f5f5;
+	color: #000 !important;
+	border-radius: 8px;
+}
+
+	#loginForm input[type=text] {
+		padding: 5px;
+		border-radius: 6px;
+		height: 3em;
+	}
+
+	#loginForm input[type=password] {
+		padding: 5px;
+		border-radius: 6px;
+		height: 3em;
+	}
+
+
+@media screen and (max-width: 900px) {
+
+	.ResponsiveSingleLineButton {
+		display: block;
+		width: 80%;
+		margin: 8px auto;
+	}
+}
+
+@media screen and (max-width: 675px) {
+	.ResponsiveSingleLineButton {
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.ResponsiveSingleLineButton {
+		width: 100%;
+	}
+}
+
+.RadTabStrip .rtsLevel1 .rtsLI {
+	font-size: .75em;
+	text-align: center;
+}
+
+@media (max-width : 720px) {
+
+	.RadTabStrip .rtsLevel1 .rtsLI {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+@media print {
+
+	.SearchResultsView {
+		padding: 2%;
+	}
+
+	.PresentationRow {
+		margin-bottom: 12px;
+		padding: 2%;
+	}
+}
+
+.pnlContainerData legend,
+.FormTable, .FormTable td {
+	color: #000;
+}

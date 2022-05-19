@@ -1,0 +1,1502 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic);
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+
+/* ------------General Styles------------ */
+
+body 
+{
+    font-size: 12pt;
+    font-family: Calibri, Verdana, Arial, Helvetica, sans-serif, times new roman;
+	padding:0px;
+	margin:0px;
+}
+
+input[type=text]
+{
+    padding: 5px;
+}
+
+input[type=file]
+{
+    color:#fff;
+}
+textarea
+{
+    line-height: normal !important;
+	padding-left: 3px;
+	resize: both;
+}
+.Default.reWrapper, .Default.RadEditor .reContentCell, .Default.reColorPicker, .Default.reInsertTable, .Default.reDropDownBody, .Default.reCustomLinks a:hover {
+    border: 0px solid #828282 !important;
+}
+/*
+#divContentArea a{
+    color: #fff;
+}
+#divContentArea b{
+    color: #fff;
+    font-weight: 900;
+}
+*/
+.actSection {
+    margin-bottom: 230px;
+
+}
+
+.InsertEquation
+{
+   background-image: url(../images/copy.gif)  !important;
+}
+.InsertInlineEquation
+{
+   background-image: url(../images/copy.gif)  !important;
+}
+   
+.row {
+	margin-bottom:10px;
+}
+
+
+/*Master Page Styles*/
+#mastContainer
+{
+    width:100%;
+}
+
+/* If including the address in the banner, use the below styles
+.mastBanner .leftBanner {
+    width: 80%;
+    float:left;
+}
+
+.mastBanner .rightBanner{
+    width: 20%;
+    text-align: center;
+    float:right;
+    max-height: 200px;
+    vertical-align:central;
+    padding-top: 30px;
+    font-size: 18px;
+}
+
+
+.mastBanner
+{
+    text-align:left;
+    background-color:#FFFFFF;
+    height: 200px;
+}
+*/
+.mastBanner
+{
+    text-align:center;
+    background-color:#FFFFFF;
+}
+
+#mastRoleMenu
+{
+    width:100%;
+    height:75px;
+}
+
+#mastActiveMenu {
+    margin-bottom: 40px;
+}
+
+.mastActiveMenu {
+    text-align: center;
+}
+
+#mastClientAreaPanel
+{
+    float: left;
+}
+
+#mastClientAreaColumnExpand,
+#mastClientAreaColumnCollpse
+{
+    height:90%;
+    float:left;
+}
+
+#mastClientAreaColumnExpand
+{
+    width: 24%;
+}
+
+#mastClientAreaColumnCollpse
+{
+    width: 2%;
+}
+
+.mastClientAreasliding-pane {
+    float: left;
+    visibility: visible;
+}
+
+.mastClientArea
+{
+    font-size: 11pt;
+    background-color:#f5f5f5;
+    color:#8f8f8f;
+    padding:10px;
+    width:80%;
+	border-radius:10px;
+	margin-left:auto;
+    margin-right:auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    line-height: 20px;
+}
+/*
+.mastClientArea h3 {
+    font-family: "Noto Sans", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-size: 22px;
+    font-weight: normal;
+}
+.mastClientArea p {
+    font-size: 13px;
+}
+.mastClientArea center {
+    font-size: 15px;
+}
+.mastClientArea li b {
+    display:block !important;
+}
+.mastClientArea b {
+    font-weight: normal;
+    display: inline-block;
+}
+*/
+.mastClientArea a {
+    color: #666;
+}
+
+.mastClientArea li {
+    list-style-position: inside;
+}
+
+#mastContentAreaColumnExpand,
+#mastContentAreaColumnCollapse
+{
+    background-color: #FFFFFF;
+    width:76%;
+    height:90%;
+    float:left;
+}
+
+#mastContentAreaColumnExpand
+{
+    width:76%;
+}
+
+#mastContentAreaColumnCollapse
+{
+    width:98%;
+}
+
+.mastContentAreaContainer,
+.mastContentAreaContainerHome
+{
+    width:98%;
+	border: solid black 0px;
+	border-radius:15px 15px 15px 15px;
+	behavior: url(PIE.htc);
+}
+
+.mastContentAreaContainer
+{
+    border-radius: 10px !important;
+    background:#354970;
+    color: #fff;
+    margin: -10px 0 20px 0;
+}
+
+.mastContentAreaContainerHome
+{
+    background:#FFFFFF;
+}
+
+.mastTitleBar
+{
+    font-size: 16pt;
+    height: auto;
+    text-align:center;
+    line-height: 45px;
+}
+
+.mastTitleBarLabel {
+    color: #ffffff;
+    display: block;
+    font-weight: normal;
+    font-size: 1.4em;
+    padding: 40px 0 20px;
+    font-family: "Noto Sans", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.mastMainContentArea
+{
+    margin: 0 auto;
+	padding:10px;
+}
+.mastMainContentArea:empty {
+    display: none !important;
+}
+.mastMainContentArea a {
+	color: #ffffff;
+}
+.mastMainContentArea div {
+    font-size: 12pt;
+}
+.mastMainFooter
+{
+    width:94%;
+	margin:0% auto;
+    background-color: #ffffff;
+    font-size:11px;
+    line-height: 1px;
+    text-align: left;
+    clear: both;
+}
+
+/*Login Styles*/
+#loginMainContainer
+{
+    width:80%;
+    height:auto;
+    margin: 50px auto auto auto;
+    padding:5%;
+}
+
+.loginMainContainer {
+    margin: 0 auto auto -10px !important;
+    padding: 0 0 50px 0 !important;
+    background-color: #354970;
+    float: left;  
+    text-align: center;
+    width: 105% !important;
+    color: #fff !important;
+}
+
+.loginClientAreaContainer .mastClientArea {
+    background: #fff !important;
+    width: 80%;
+    margin-top: 50px;
+}
+
+.loginClientAreaContainer .mastClientArea
+{
+    color:#000;
+}
+
+#loginNewUserColumn
+{
+    width: 20%;
+    float: left;
+}
+
+.loginNewUser
+{
+    width:90%;
+    padding:45px;
+    border: none;
+    background: #f5f5f5;
+    color: #000 !important;
+    margin-top: 130px !important;
+    margin-left: 50% !important;
+    position: relative;
+    z-index: 999;
+    border-radius:15px 15px 15px 15px;
+}
+.NewUserLink {
+    color: #000;
+}
+.NewUserLink:before {
+    content: "\f007";
+}
+.RememberMeLink {
+    color: #fff;
+}
+.RememberMeLink:before {
+    content:"\f128";
+}
+.SiteClosedLabel
+{
+   	font-weight: bold;
+	font-size: 14pt !important; 
+	text-align: left;
+}
+
+#loginExistingUserColumn
+{
+    width: 40%;
+    float: left;
+}
+
+.loginExistingUser
+{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin: auto 0;
+    margin-top: 50px;
+    margin-left: 9%;
+    padding: 15px;
+    margin-left: 130px;
+    border: none;
+	border-radius: 15px 15px 15px 15px;
+}
+.loginExistingUser table { 
+    margin: 0 auto;
+    width: 100%;
+}
+
+.loginExistingUser .loginExistingUserTable {
+    margin: 0 auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+.loginExistingUserTable .FieldLabel {
+    width: 15%;
+    text-align: right;
+}
+.loginExistingUserTable .loginTextBoxes {
+    padding: 8px;
+    color: #000;
+    border: none;
+    width: 200px;
+    float: left;
+}
+.ReturningUserHeader {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    width: 28%;
+}
+.LoginButtonCell
+{
+    text-align: center;
+}
+.LoginButton {
+    text-align: center;
+    font-size: 12pt !important;
+    width: 200px;
+    padding: 15px;
+}
+
+/*Splash Styles*/
+.SplashOuter
+{
+    width:80%;
+    height:auto;
+    text-align:center;
+    margin:auto 0;
+    margin-top:50px;
+    margin-left:9%;
+    padding:15px;
+    border: solid black 1px;
+	border-radius:15px 15px 15px 15px;
+	behavior: url(PIE.htc);
+}
+
+/*Container Styles*/
+.CenterContainerItems   /*** Rename Class*/
+{
+    width:95%;
+	margin-left:auto;
+    margin-right:auto;
+}
+
+.ActionItemContainer, .ActionItemContainerTopItem
+{
+    text-align: left;
+    clear:left;
+    padding: 0;
+}
+.ActionItemContainer .StandardButton {
+    margin-top: 10px;
+}
+
+.AffiliationBlockContainer
+{
+    text-align: left;
+    background-color:#FFFFFF;
+    color:#000000;
+    padding: 15px;
+	border-radius:10px;
+	margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 40px;
+}
+
+.StandardButton
+{
+    color: #ffffff !important;
+    background-color: #2E373D;
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-right: 5px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid #45515E;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 12px;
+    line-height: 1.4285;
+    border-radius: 6px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.StandardButton:hover, .StandardButton:focus 
+{
+    color: #ffffff;
+    background-color: #1f232a;
+    border: 1px solid #16191e;
+    text-decoration: none;
+    outline: none;
+}
+
+.StandardButton:disabled{    
+    background-color: #657189 !important;
+    color: #D8D8D8 !important;
+    border: 1px solid #657189;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQAKrVq36zwjjgzhhYWGMYAEYB8RmROaABADeOQ8CXl/xfgAAAABJRU5ErkJggg==) repeat;
+}
+
+
+/*Grid View Styles*/
+table.grdDefaultStyle
+{
+    padding: 8px;
+    line-height: 1.4285;
+    vertical-align: top;
+    border-top: 0px solid #ebebeb;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+table.grdDefaultStyle caption
+{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+table.grdDefaultStyle th
+{
+    text-align: left;
+    font-weight: bold;
+    color: #000;
+    padding: 15px;
+    background-color: #ffffff;
+    border-bottom: #000 solid 1px;
+}
+
+table.grdDefaultStyle th a
+{
+    color: #000;
+    text-decoration: none;
+}
+
+table.grdDefaultStyle tr th a:before {
+    display: inline-block;
+    float: left;
+    content: "\f0dc";
+    font-family:FontAwesome;
+    padding-right: 5px
+}
+
+table.grdDefaultStyle a {
+    color: #313640;
+}
+
+table.grdDefaultStyle tr td a {
+    font-size: .9em;
+}
+
+table.grdDefaultStyle td
+{
+    font-family: "Noto Sans", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: .9em;
+    padding: 15px;
+    text-align: left;
+    line-height: 12px;
+}
+
+table.grdDefaultStyle .grdDefaultRowStyle
+{
+    background-color:#FFFFFF;
+    color:#373e4a;
+}
+
+table.grdDefaultStyle .grdDefaultAltStyle
+{
+    background-color:#e3e3e3;
+    color:#373e4a;
+}
+/* Put a border radius around the table */
+table.grdDefaultStyle tr:last-child td:first-child {
+    -moz-border-radius-bottomleft:10px;
+    -webkit-border-bottom-left-radius:10px;
+    border-bottom-left-radius:10px
+}
+table.grdDefaultStyle tr:last-child td:last-child {
+    -moz-border-radius-bottomright:10px;
+    -webkit-border-bottom-right-radius:10px;
+    border-bottom-right-radius:10px
+}
+table.grdDefaultStyle tr:first-child td:first-child,
+table.grdDefaultStyle tr:first-child th:first-child {
+    -moz-border-radius-topleft:10px;
+    -webkit-border-top-left-radius:10px;
+    border-top-left-radius:10px
+}
+table.grdDefaultStyle tr:first-child td:last-child,
+table.grdDefaultStyle tr:first-child th:last-child {
+    -moz-border-radius-topright:10px;
+    -webkit-border-top-right-radius:10px;
+    border-top-right-radius:10px
+}
+
+table.grdDefaultStyle .grdDefaultPagerStyle
+{
+    background-color: #f5f5f5;
+    border-top: #000 solid 1px;
+    border-bottom: #000 solid 1px;
+}
+
+table.grdDefaultStyle .grdDefaultPagerStyle span
+{
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+table.grdDefaultStyle .grdDefaultPagerStyle a
+{
+    font-size: 1.2em;
+}
+
+
+/* Author Home Link Images */
+.grdTableActionItems
+{
+    width: 20%;
+}
+
+.grdTableActionSingleItem
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grdTableActionItems a, .grdTableActionSingleItem a 
+{
+    text-decoration: none;
+}
+.grdTableActionItems a:before, .grdTableActionSingleItem a:before {
+    font-family:FontAwesome;
+    line-height:1;
+    margin:7px;
+    display:inline-block;
+    text-decoration: none;
+}
+
+.grdLnkViewSubmission:before {
+    content:"\f06e";
+}
+.grdLnkContinue:before {
+    content:"\f054";
+}
+.grdLnkEdit:before {
+    content:"\f044";
+}
+.grdLnkWithdraw:before {
+    content:"\f014";
+}
+.grdLnkReinstate:before {
+    content:"\f01e";
+}
+.grdLnkPresentationUpload:before {
+    content:"\f093";
+}
+.grdLnkEditPresentation:before {
+    content:"\f040";
+}
+.grdLnkViewReceipt:before {
+    content:"\f0c6";
+}
+.grdLnkAcceptRequest:before {
+    content: "\f164";
+}
+.grdLnkRejectRequest:before {
+    content: "\f165";
+}
+.grdLnkViewSchedule:before {
+    content:"\f0e8";
+}
+.grdLnkSchedule:before {
+    content:"\f0db";
+}
+.grdLnkAssigReviewer:before,
+.grdLnkAssignChair:before {
+    content: "\f0a9";
+}
+.grdLnkEditUser:before {
+    content: "\f0e8";
+}
+
+/* HyperLink Styles */
+/* Note: for links using images set the class to both ImageLink and class with the image name (i.e. class="ImageLink EditLink") */
+.ImageLink {
+    text-decoration: none;
+}
+.ImageLink:before {
+    font-family:FontAwesome;
+    line-height:1;
+    margin:5px;
+}
+.DeleteLink:before {
+    content:"\f00d";
+}
+.EditLink:before {
+    content:"\f044";
+}
+.CopyLink:before {
+    content:"\f0c5";
+}
+.FileGuideline:before {
+    content:"\f15b";
+}
+.ReceiptLink:before {
+    content:"\f0d6";
+}
+.UserLink:before  
+{
+    content:"\f007";
+}
+.DownloadLink:before
+{
+    content:"\f019";
+}
+
+.lnkViewFileUpload, .lnkDeleteFileUpload {
+    border-bottom: 1px solid #ffffff;
+}
+
+.lnkViewFileUpload:before {
+    content:"\f06e";
+}
+.lnkDeleteFileUpload:before {
+    content:"\f014";
+}
+
+/* Links for Blast Email */
+.grdDefaultStyle .lnkEmailName
+{
+    color: #996633;
+}
+.grdDefaultStyle .lnkEmailSubject
+{
+    color: #229900;
+}
+.grdLnkResendBlast:before
+{
+    content: "\f0e0";
+}
+.grdLnkViewErrors
+{
+    color: #ff0000 !important;
+}
+.grdLnkViewErrors:before
+{
+    content: "\f12a";
+}
+.lnkViewEmailRecipients
+{
+    color: #fff;
+    background-color: #990033;
+}
+.lnkViewEmailRecipients:before
+{
+    content: "\f0c0";
+}
+
+
+/* Form Table Style */
+.FormTable {
+    width: 100%;
+}
+.FormTable th
+{
+    font-weight:bold;
+    font-size: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.FormTable,
+.FormTable td {
+    color: #fff;
+    padding: 5px;
+}
+.FormTable input,
+.FormTable select {
+    padding: 5px;
+    margin-bottom: 6px;
+}
+.FormTable input[type=checkbox] {
+    width:20px;
+}
+.FormTable tr td:first-child {
+    width: 15%;
+    text-align: right;
+    vertical-align: top;
+}
+.FormTable tr td:last-child {
+    width: 85%;
+    text-align: left;
+}
+.FormTable .listItemsControl tr td
+{
+    width: auto;
+    text-align: left;
+}
+.FormTable .RadEditorFormTable td
+{
+    padding: 0px !important;
+}
+.FormTable .RadEditorFormTable .reEditorModesCell
+{
+    width: 30% !important;
+}
+.FormTable .EditorCounterContainer
+{
+    margin-top: -1px;
+}
+table.EmailLookupTable
+{
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+table.EmailLookupTable th
+{
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bold;
+    background-color:#ffffff;
+    color: #000;
+    padding: 15px;
+    border-bottom: #000 solid 1px;
+}
+table.EmailLookupTable td
+{
+    background-color:#FFFFFF;
+    color:#373e4a;
+    vertical-align: top;
+    width: 50%;
+}
+table.EmailLookupTable .SearchButtons
+{
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    border-top: #000 solid 1px;
+    -moz-border-radius-bottomleft:10px;
+    -webkit-border-bottom-left-radius:10px;
+    border-bottom-left-radius:10px;
+    -moz-border-radius-bottomright:10px;
+    -webkit-border-bottom-right-radius:10px;
+    border-bottom-right-radius:10px
+}
+table.EmailLookupTable th:first-child 
+{
+    -moz-border-radius-topleft:10px;
+    -webkit-border-top-left-radius:10px;
+    border-top-left-radius:10px
+}
+table.EmailLookupTable th:last-child 
+{
+    -moz-border-radius-topright:10px;
+    -webkit-border-top-right-radius:10px;
+    border-top-right-radius:10px
+}
+.grdDefaultStyle .EmailLookupSentForLabel
+{
+    font-size: 11px;
+    color: #CC0066;
+}
+
+.grdDefaultStyle .grdResultsItemLink a {
+    line-height:1;
+    margin:7px;
+    display:inline-block;
+}
+
+.grdResultsItemLink .lnkViewEmail
+{
+    color: Green;
+}
+
+.grdResultsItemLink .lnkResendEmail
+{
+    color: Red;
+}
+
+.grdResultsItemLink .lnkViewEmailVisits
+{
+    color: #0099FF;
+}
+
+/* Submission Detail Style */
+div.SubmissionFieldsContainer
+{
+    padding: 2px;
+    margin: 2px;
+}
+div.SubmissionFieldsRow
+{
+    margin: 8px 0px 8px 0px;
+}
+div.SubmissionFieldsCellQuestion
+{
+    display: inline-block;
+}
+div.SubmissionFieldsCellQuestionIndented
+{
+    padding: 15px 0px 15px 15px;
+}
+.SubmissionFieldAdditionalInformation
+{
+    font-weight:bold;
+    font-size:14px;
+    font-style:italic;
+}
+div.SubmissionFieldsSectionHeader
+{
+    font-weight:bold;
+    font-size:16px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.FormTable input[readonly],
+.FormTable select[disabled],
+.FormTable textarea[readonly],
+.FormRow input[readonly],
+.FormRow select[disabled],
+.FormRow textarea[readonly], textarea[readonly],
+div.SubmissionFieldsRow input[readonly],
+div.SubmissionFieldsRow select[disabled] {
+    background-color: #c6c5c5;
+}
+
+/* Active Menu Style */
+.SetInfoPanel {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center !important;
+    border-radius: 10px !important;
+}
+.StepInfoLabel {
+    font-size: 1.4em !important;
+}
+.SubmissionStepsContainer
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+/* Submission Step Layout */
+div.UploadItem      /*** Rename Class*/
+{
+    padding-top: 8px;
+    margin: 10px 0px 5px 0;
+}
+div.UploadItem div
+{
+    padding: 5px 0px 5px 0
+}
+div.UploadItem:empty
+{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.CenterContent
+{
+    text-align:center;
+}
+.CenterContent .ActionItemContainer
+{
+    margin-top: 10px;
+    text-align:center;
+}
+
+/*Payment Details*/
+.PaymentDetailTable {   /*** Rename Class*/
+    width:95% !important;
+    border: 2px solid black !important;
+}
+.PaymentDetailTable td {
+    background-color: #ffffff;
+    color: #000 !important;
+}
+.PaymentDetailTable .PaymentDetailTableItem
+{
+    text-align: center;
+}
+.PaymentDetailTable tr:last-child
+{
+    border-top: 2px solid #000;
+}
+.PaymentDetailTable tr:last-child td
+{
+    background-color: #BBB;
+}
+
+.SubmittedPaymentTable {
+    text-align: left;
+    width: 95%;
+    border: #ffffff solid 1px;
+    padding: 5px;
+}
+.SubmittedPaymentTable th {
+    font-weight:bold;
+    font-size: 20px;
+    padding-bottom: 15px;
+    text-align: left;
+}
+.SubmittedPaymentTableInformation {
+    padding: 20px;
+    text-align: left;
+    width: 50%;
+    vertical-align: top;
+}
+.SubmittedPaymentTableInformation table {
+    width: 100%;
+}
+.PaymentInformationContainer {
+    margin-top: 15px;
+}
+/* Receipt Styles */
+.ReceiptHeader, .ReceiptInfo {
+    font-weight: bold;
+}
+.ReceiptHeader {
+    font-size: 18pt;
+}
+.ReceiptInfo {
+    font-size: 16pt;
+}
+
+/* View Supporting Files */
+.ViewSupportingFiles {
+    margin: 0 0 15px 20px;
+}
+.ViewSupportingFiles li {
+    padding:10px;
+}
+
+/* Submit Step */
+.SubmissionInformation {
+    width: 95%;
+}
+.SubmissionInformation td {
+    padding: 5px;
+}
+.SubmissionInformationFieldLabel {
+    text-align: left;
+    font-weight: bold;
+    width: 15% !important;
+    font-weight: bold;
+}
+.SubmissionInformationContentInfo {
+    text-align: left;
+}
+
+.SubmissionInformationAuthorsSubjects {
+    width: 70%;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid;
+}
+.SubmissionInformationAuthorsSubjects tr {
+    border: 1px solid;
+}
+
+.SubmissionInformationAuthorsSubjects td {
+    background-color: #ffffff;
+}
+
+/* Search Styles */
+.pnlContainerData .SearchItemContainer
+{
+    margin: 10px;
+}
+.pnlContainerData .StandardButton
+{
+    margin-bottom: 15px;
+}
+
+
+.ReportPanelContainer
+{
+    width: 95%;
+    margin: 10px auto 20px auto;
+}
+.ReportInstructionContainer
+{
+    width: 90%;
+    font-size: 11px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ReportInstructionContainer ul
+{
+    list-style-type: square;
+}
+.ReportInstructionContainer div
+{
+    font-weight: bold;
+    font-style: italic;
+}
+.ReportFieldPickerGrid
+{
+    text-align: center;
+}
+.ReportFieldPickerGrid table 
+{ 
+    border-collapse: collapse; 
+    text-align: left; 
+    width: 100%; 
+} 
+.ReportFieldPickerGrid 
+{
+    font: normal 10px/150% Arial, Helvetica, sans-serif; 
+    background: #ffffff; 
+    overflow: hidden; 
+    border: 1px solid #888F99; 
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px;
+    border-radius: 3px; 
+}
+.ReportFieldPickerGrid table tr:first-child
+{
+    text-align: left;
+    font-weight: bold;
+    color: #000;
+    padding: 15px;
+    background-color: #ffffff;
+    border-bottom: #000 solid 1px;
+}
+
+.ReportFieldPickerGrid table td, 
+.ReportFieldPickerGrid table th 
+{ 
+    padding: 3px 10px; 
+}
+.ReportFieldPickerGrid table tbody td:first-child 
+{ 
+    border-left: none; 
+}
+.ReportFieldPickerGrid table tbody tr:last-child td 
+{ 
+    border-bottom: none; 
+}
+
+div.AssignReviewSubmissionInformation 
+{
+    margin: 8px 0px 8px 12px;
+}
+
+div.AssignReviewSubmissionInformation .AssignReviewerNumberSubmissions,
+div.AssignReviewSubmissionInformation .AssignSubmissionNumberReviews {
+    color: #253dfa;
+}
+
+div.AssignReviewSubmissionInformation .AssignSubmissionTitle {
+    color: #000000;
+}
+
+div.AssignReviewSubmissionInformation .SubmissionReviewerInfo
+{
+    color: #4e0d33;
+}
+
+.AssignReviewerConflictInformation {
+    color: #752525;
+    margin-left: 6px;
+}
+
+/* Statistic Style */
+
+/* Control Styles */
+.RadUpload {
+    width: 100%;
+    font-size: 12pt;
+}
+.RadEditor {
+    margin:0 auto;
+    color: #000 !important;
+    margin-left: 0;
+}
+
+.RadEditor .reContentArea{
+    max-width: 780px !important;
+}
+
+.RadEditor .reContentArea ul,
+.RadEditor .reContentArea ol{
+    padding-left: 15px !important;
+}
+
+.RadEditor + span {
+    color: #000;
+}
+.EditorCounterContainer
+{
+    background-color: #eeeeee;
+    color:#000;
+    margin-top: -5px;
+    margin-left: 1px;
+    width: 680px;
+}
+
+.EditorCounterContainer .Information {
+    padding-left: 8px;
+}
+
+.CheckboxItemControl,
+.radioControl {
+    border-collapse: unset !important;
+}
+
+.radioControlReview label, 
+.radioControl label,
+.radioFlowControl label
+{
+    display: inline;
+    padding-left: 8px;  
+    cursor: pointer;
+    font-size: 12pt;
+    font-weight: normal;
+}
+
+.radioFlowControl input[type=radio]
+{
+    margin-left: 10px;
+}
+
+.radioControl tr td:first-child {
+    width: auto;
+}
+
+table.radioControl {
+    border-collapse: separate !important;
+}
+
+.listItemsControl label
+{
+    display: inline;
+    padding-left: 8px;  
+    cursor: pointer;
+    font-size: 12pt;
+}
+
+.CheckboxItemControlReview label,
+.CheckboxItemControl label
+{
+    display: inline;
+    padding-left: 8px;  
+    font-size: 12pt;
+}
+
+.CheckboxItemControlReview label,
+.radioControlReview label
+{
+    color: #000;
+}
+
+.CheckboxItemControlGDPR
+{
+	font-weight: bold;
+}
+
+.radioControlReview td,
+.radioControl td,
+.CheckboxItemControlReview td,
+.CheckboxItemControl td {
+	padding-right: 18px;
+}
+
+/*Panel Control Style*/
+.pnlContainerData,
+.pnlContainerDataInfo
+{
+    margin: 0px 5px 0px 5px;
+    padding-left: 10px;
+    width: 75%;
+}
+
+.pnlContainerData legend 
+{
+    width: auto !important;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 2em;
+}
+        
+.pnlContainerData fieldset,
+.pnlContainerDataInfo
+{
+    border: #fff solid 1px;
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.pnlUnprocessedEmail, .pnlSentEmail, .pnlCancelledEmail
+{
+    margin: 0px 5px 0px 5px;
+    width: 100%;
+}
+
+.pnlUnprocessedEmail legend, .pnlSentEmail legend, .pnlCancelledEmail legend
+{
+    width: auto !important;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 2em;
+}
+
+.pnlSentEmail legend
+{
+    color: green;
+}
+
+.pnlCancelledEmail legend
+{
+    color: #bc0030;
+}
+
+.pnlUnprocessedEmail fieldset, .pnlSentEmail fieldset, .pnlCancelledEmail fieldset
+{
+    border: #fff solid 1px;
+    padding: 20px 10px 20px 10px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Alerts */
+.IncompleteMsg, 
+.ValidationAlert,
+.rgNoRecords
+{
+    font-size: 12pt;
+	font-weight:bold;
+    color: #000;
+    padding: 10px 20px;
+    background-color: #DBB3B3;
+    border-radius: 5px;
+    border: #BD6A6A solid 2px;
+    display: inline-block;
+    margin-bottom:20px;
+}
+.rgNoRecords
+{
+    display: table-row !important;
+}
+.rgNoRecords div {
+    padding: 8px 0px 8px 5px;
+}
+.Successful 
+{
+    font-size: 12pt;
+    color: #ffffff;
+    padding: 10px 20px;
+    background-color: #A3D39C;
+    border-radius: 5px;
+    border: #313640 solid 2px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.ValidationAlert:empty
+{
+    padding: 0 !important;
+    background-color: inherit !important;
+    border: 0 !important;
+    display:none;
+}
+
+/* Field Label Styles*/
+.FieldLabel,
+.FieldLabelImage,
+table.grdDefaultStyle caption
+{
+	font-weight:bold;
+	font-size:12pt;	
+}
+
+.FieldLabelImage:before, .FieldLabelImage:after {
+    content: " \f068  ";
+    font-family:FontAwesome;
+}
+
+.PageInstructions
+{
+    font-size: 14pt;
+    color: #000000;
+    padding: 10px 20px;
+    background-color: #CCFFFF;
+    border-radius: 5px;
+    border: #313640 solid 2px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.PageInstructionsHeader
+{
+   	font-weight: bold;
+	font-size: 16pt !important; 
+}
+
+.Information
+{
+    font-weight:bold;
+    font-size:14px;
+}
+
+.ImageCaption
+{
+    font-size:11px;
+}
+
+/* Event Proposal Speaker Grid Styles */
+.AltSpeaker {
+    font-size: inherit !important;
+    font-style: italic;
+    color: #6535ef;
+    margin-top: 3px;
+}
+
+.DecisionDate {
+    font-size: 11px !important;
+    margin-top: 12px;
+}
+
+.AcceptDecision {
+    color: green;
+}
+
+.RejectDecision {
+    color: red;
+}
+
+.ExceedsMultipleProposalRow {
+    background-color: aqua;
+}
+
+.ExceedsMultipleProposalRow a {
+    color: #000;
+}
+
+/* Project Manager Home Layout */
+
+#PMHomeContainer
+{
+    width:100%;
+    line-height: 95%;
+}
+#PMHomeNavigationColumn
+{
+    width:50%;
+    float:left;
+}
+
+#PMHomeChartColumn
+{
+    width: 50%;
+    float:left;
+}
+
+.PMHomeNavigationContainer, .PMHomeChartContainer {
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+.PMHomeNavigationContainer
+{
+    background:#354970;
+    width:95%;
+	border: solid black 0px;
+	border-radius:15px 15px 15px 15px;
+}
+
+.PMHomeChartContainer
+{
+    font-size: 10pt;
+    color:#000000;
+    padding:10px;
+    width:95%;
+	border-radius:15px 15px 15px 15px;
+}
+.PMHomeChartContainer svg {
+    margin-left:50px;
+    overflow: visible;
+}
+
+/* Chair Home Layout */
+.ChairHomeNavigationContainer {
+    width: 40%;
+    margin: 0 0 20px 0;
+    text-align: center;
+    background:#354970;
+	border: solid black 0px;
+	border-radius: 15px 15px 15px 15px;
+}
+
+.StepInfoLabel
+{
+    color:#000000;
+    font-size: 12pt;
+}
+
+.SetInfoPanel
+{
+    background-color:#f5f5f5;
+    color:#000000;
+    padding:10px;
+    width:40%;
+    text-align:left;
+	border-radius:15px 15px 15px 15px;
+}
+
+.fieldControls table{
+    display: inline-block;
+    padding-left: 5px;
+    height: 15px;
+    line-height: 20px !important;
+}
+
+.RadMenu a.rmLink:after{
+    clear:none !important;
+}
+
+div.RadSiteMap_MiraSiteMap .rsmTemplate, div.RadSiteMap_MiraSiteMap .rsmLink {
+    color: #fff !important;
+    border-bottom: 0px !important;
+}
+
